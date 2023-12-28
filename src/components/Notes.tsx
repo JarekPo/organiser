@@ -10,6 +10,7 @@ import TableRow from '@mui/material/TableRow';
 import {format} from 'date-fns';
 
 import {notesList} from './constants';
+import Note from './Note';
 
 const Notes = () => {
   return (
@@ -26,12 +27,13 @@ const Notes = () => {
         <TableBody>
           {notesList.map((note) => {
             return (
-              <TableRow key={note.title}>
-                <TableCell>{note.title}</TableCell>
-                <TableCell>{note.category}</TableCell>
-                <TableCell>{note.content}</TableCell>
-                <TableCell>{format(note.date, 'yyyy/MM/dd hh:mm')}</TableCell>
-              </TableRow>
+              <Note
+                key={note.title}
+                title={note.title}
+                category={note.category}
+                content={note.content}
+                date={format(note.date, 'yyyy/MM/dd hh:mm')}
+              />
             );
           })}
         </TableBody>

@@ -1,20 +1,22 @@
-export const notesList = [
+import {NotesList} from './types';
+
+export const notesList: NotesList[] = [
   {
     title: 'codding',
     category: 'learning',
     content: 'Navoica today',
-    date: new Date('2023-12-27'),
+    date: '2023-12-27',
   },
   {
     title: 'football',
     category: 'sport',
     content: 'Football today',
-    date: new Date('2023-12-28'),
+    date: '2023-12-28',
   },
   {
     title: 'drinks',
     category: 'leisure',
     content: 'New yera eve drinks',
-    date: new Date('2023-12-31'),
+    date: '2023-12-31',
   },
 ];
