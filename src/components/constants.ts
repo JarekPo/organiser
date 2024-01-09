@@ -16,7 +16,7 @@ export const notesList: NotesList[] = [
   {
     title: 'drinks',
     category: 'leisure',
-    content: 'New yera eve drinks',
+    content: 'New year eve drinks',
     date: '2023-12-31',
   },
 ];
