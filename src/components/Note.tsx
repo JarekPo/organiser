@@ -13,6 +13,7 @@ const Note = (note: NotesList) => {
       <TableCell>{note.category}</TableCell>
       <TableCell>{note.content}</TableCell>
       <TableCell>{format(note.date, 'yyyy/MM/dd')}</TableCell>
+      <TableCell>{note.time}</TableCell>
     </TableRow>
   );
 };

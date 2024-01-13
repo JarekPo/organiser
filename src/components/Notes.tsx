@@ -32,6 +32,9 @@ const Notes = () => {
               <TableCell>
                 <Typography variant='h6'>Date</Typography>
               </TableCell>
+              <TableCell>
+                <Typography variant='h6'>Time</Typography>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -43,6 +46,7 @@ const Notes = () => {
                   category={note.category}
                   content={note.content}
                   date={format(note.date, 'yyyy/MM/dd hh:mm')}
+                  time={note.time}
                 />
               );
             })}

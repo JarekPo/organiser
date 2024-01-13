@@ -3,4 +3,5 @@ export interface NotesList {
   category: string;
   content: string;
   date: string;
+  time: string;
 }
