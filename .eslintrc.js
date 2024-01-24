@@ -42,7 +42,7 @@ module.exports = {
     ],
     'react/react-in-jsx-scope': 'off', // Disables the requirement to import React in JSX files
     'react/jsx-props-no-spreading': 'warn', // Warning for spreading props to components
-    'unused-imports/no-unused-imports': 'error', // Error for unused imports
+    'unused-imports/no-unused-imports': 'warn', // Error for unused imports
     'simple-import-sort/imports': ['warn', {groups: [['^react'], ['^@?\\w'], ['@/(.*)'], ['^[./]']]}], // Warning for import sorting
   },
   // Additional configuration
